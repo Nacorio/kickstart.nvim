@@ -1021,3 +1021,10 @@ require('lazy').setup({
 vim.o.tabstop = 4
 vim.o.shiftwidth = 4
 vim.o.expandtab = true
+
+vim.o.shell = 'powershell.exe'
+vim.o.shellcmdflag = '-command'
+vim.o.shellpipe = '| Out-File -Encoding UTF8 %s'
+vim.o.shellredir = '| Out-File -Encoding UTF8 %s'
+vim.o.shellquote = ''
+vim.o.shellxquote = ''
